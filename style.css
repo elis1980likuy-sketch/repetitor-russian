@@ -1,4 +1,4 @@
-/* Тетрадь в клетку: чернила, красная ручка учителя, поля */
+/* Тетрадь в линейку: чернила, красная ручка учителя, поля */
 :root {
   --paper: #fdfdfb; --grid: #e4e9f6; --card: #ffffff; --soft: #edf1fb;
   --ink: #1c2b5a; --mute: #55607e; --line: #c9d1ea;
@@ -20,10 +20,8 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0; color: var(--ink); background-color: var(--paper);
-  background-image:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-  background-size: 28px 28px;
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px);
+  background-size: 100% 32px;
   font: 17px/1.65 var(--sans);
 }
 /* красное поле тетради */
