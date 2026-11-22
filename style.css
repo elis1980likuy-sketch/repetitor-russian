@@ -6,7 +6,7 @@
   --serif: Literata, Georgia, serif;
   --sans: Onest, system-ui, sans-serif;
   --hand: Caveat, "Comic Sans MS", cursive;
-  color-scheme: light;
+  color-scheme: only light;
 }
 
 * { box-sizing: border-box; }
