@@ -1,0 +1,10 @@
+var TG="RepetitorOfRussian";
+var d=document.getElementById("dlg"),f=document.getElementById("f"),ok=document.getElementById("ok");
+document.querySelectorAll("[data-open]").forEach(function(b){b.onclick=function(){f.hidden=false;ok.hidden=true;d.showModal()}});
+document.getElementById("close").onclick=function(){d.close()};
+d.addEventListener("click",function(e){if(e.target===d)d.close()});
+f.onsubmit=function(e){e.preventDefault();var v=new FormData(f);
+ var t="Заявка на пробное занятие\nЗаполняет: "+v.get("who")+"\nУченик: "+v.get("name")+", "+v.get("cls")+" класс\nЗапрос: "+(v.get("req")||"не указан")+"\nТелефон: "+v.get("tel")+"\nМессенджер: "+v.get("mes");
+ document.getElementById("txt").value=t;
+ document.getElementById("tg").href="https://t.me/"+TG+"?text="+encodeURIComponent(t);
+ f.hidden=true;ok.hidden=false};
