@@ -48,3 +48,22 @@ input,select,textarea{font:17px Onest,sans-serif;padding:11px 12px;border:1px so
 .x{justify-self:end;background:none;border:0;font-size:28px;line-height:1;color:var(--mute);cursor:pointer}
 .ok{padding:28px;text-align:center}
 footer{padding:28px 0 40px;color:var(--mute);font-size:14px;text-align:center}
+
+/* Компьютерная версия */
+@media (min-width: 900px) {
+  body { font-size: 18px; }
+  .w { max-width: 1080px; padding: 0 40px; }
+  section { padding: 72px 0; }
+  h1 { font-size: 54px; }
+  h2 { font-size: 36px; margin-bottom: 24px; }
+  h3 { font-size: 19px; }
+  .hero { grid-template-columns: 1fr 380px; gap: 72px; padding: 72px 0 84px; }
+  .hero img { max-width: 380px; justify-self: end; }
+  .hero p { max-width: 520px; }
+  #about p, #trial p, #faq details, #how > p { max-width: 720px; }
+  .list { grid-template-columns: 1fr 1fr; gap: 18px; }
+  .rev { grid-template-columns: 1fr 1fr; gap: 18px; }
+  .stat { padding: 24px; }
+  .stat b { font-size: 42px; }
+  .btn { padding: 17px 32px; font-size: 18px; }
+}
