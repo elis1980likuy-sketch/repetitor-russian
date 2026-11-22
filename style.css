@@ -6,14 +6,7 @@
   --serif: Literata, Georgia, serif;
   --sans: Onest, system-ui, sans-serif;
   --hand: Caveat, "Comic Sans MS", cursive;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #141826; --grid: #1e2437; --card: #1b2033; --soft: #1f2640;
-    --ink: #e8ebf5; --mute: #9aa3bd; --line: #2e3652;
-    --red: #ff7066; --on-red: #1a0d0c; --ph: #3a2326;
-    color-scheme: dark;
-  }
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
